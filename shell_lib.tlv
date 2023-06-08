@@ -57,7 +57,7 @@ m4+definitions(['
                                        $RETAIN;
                                   
       ?$dmem_rd_en
-         $dmem_rd_data[31:0] = /dmem[$dmem_addr]>>1$value;
+         $dmem_rd_data[31:0] = /dmem[$dmem_addr]$value;
       `BOGUS_USE($dmem_rd_data)
 
 \TLV cpu_viz(@_stage)
